@@ -46,6 +46,7 @@ public class Aggregate {
     }
 
     public Aggregate(String key, List<Double> measurements) {
+        this.key = key;
         count = measurements.size();
 
         // Calculate average
