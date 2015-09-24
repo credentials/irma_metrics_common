@@ -45,6 +45,10 @@ public class DataLogger {
         measurements = new LinkedList<Double>();
     }
 
+    public boolean isEmpty() {
+        return measurements.size() == 0;
+    }
+
     public void log(double value) {
         measurements.add(value);
     }
