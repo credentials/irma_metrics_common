@@ -51,4 +51,8 @@ public class SessionToken {
     public void setSessionToken(String sessionToken) {
         this.sessionToken = sessionToken;
     }
+
+    public String toString() {
+        return sessionToken;
+    }
 }
