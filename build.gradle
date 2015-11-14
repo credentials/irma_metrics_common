@@ -13,3 +13,9 @@ repositories {
 dependencies {
     compile 'commons-codec:commons-codec:1.10'
 }
+
+if ( project.hasProperty("mavenRepositoryIRMA") ) {
+    uploadArchives.repositories.mavenDeployer {
+        repository(url: mavenRepositoryIRMA)
+    }
+}
